@@ -6,7 +6,6 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set(CMAKE_CLANG_TIDY clang-tidy)
 
 option(BUILD_DEBUG "Debug build" OFF)
-option(WXR_STATIC "Static Linking for Components and Systems" OFF)
 
 add_compile_options(-std=c99 -Wall -Wextra -Wno-unused-parameter)
 add_link_options(-rdynamic)
@@ -19,10 +18,6 @@ else()
   add_compile_options(-O3)
 endif()
 
-if (WXR_STATIC)
-  add_compile_definitions(WXR_STATIC)
-endif()
-
 find_package(PkgConfig REQUIRED)
 pkg_check_modules(WASSERXR REQUIRED wasserxr)
 pkg_check_modules(WASSERXR_CORE REQUIRED wasserxr_core)
@@ -31,11 +26,6 @@ pkg_check_modules(WASSERXR_CORE REQUIRED wasserxr_core)
 add_executable(demo src/main.c src/glad/gl.c)
 target_include_directories(demo PRIVATE ${WASSERXR_INCLUDE_DIRS})
 target_link_libraries(demo PRIVATE ${WASSERXR_LIBRARIES})
-if(WXR_STATIC)
-  target_link_libraries(demo PRIVATE -Wl,--whole-archive 
-    ${WASSERXR_CORE_LIBRARIES} 
-    -Wl,--no-whole-archive)
-endif()
 
 install(TARGETS demo
     RUNTIME DESTINATION bin

@@ -12,9 +12,7 @@ int main() {
   // Create the ecs scene
   WXR_Scene *scene = wxr_create_scene();
 
-#ifndef WXR_STATIC
   wxr_load_plugin(scene, "libwasserxr_core.so");
-#endif
 
   WXR_Entity console = wxr_add_entity(scene);
   wxr_add_component(scene, console, "WXR_Console");
