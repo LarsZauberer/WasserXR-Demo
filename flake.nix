@@ -31,7 +31,6 @@
             pkgs.clang
             pkgs.cmake
             pkgs.gdb
-            pkgs.valgrind
 
             pkgs.doxygen
 
