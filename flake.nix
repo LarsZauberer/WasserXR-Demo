@@ -4,8 +4,8 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
     flake-utils.url = "github:numtide/flake-utils";
-    wasserxr.url = "/home/lars/GitHub/WasserXR/WasserXR";
-    wasserxr-core.url = "/home/lars/GitHub/WasserXR/WasserXR-Core";
+    wasserxr.url = "github:LarsZauberer/WasserXR";
+    wasserxr-core.url = "github:LarsZauberer/WasserXR-Core";
   };
 
   outputs =
