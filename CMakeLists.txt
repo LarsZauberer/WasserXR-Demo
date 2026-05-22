@@ -22,12 +22,16 @@ find_package(PkgConfig REQUIRED)
 pkg_check_modules(WASSERXR REQUIRED wasserxr)
 pkg_check_modules(WASSERXR_CORE REQUIRED wasserxr_core)
 
+add_library(demo_lib SHARED src/Spin_Component.c src/spin_system.c)
+target_include_directories(demo_lib PRIVATE ${WASSERXR_INCLUDE_DIRS})
+target_link_libraries(demo_lib PRIVATE ${WASSERXR_LIBRARIES})
+
 # Generate main executable
 add_executable(demo src/main.c src/glad/gl.c)
 target_include_directories(demo PRIVATE ${WASSERXR_INCLUDE_DIRS})
 target_link_libraries(demo PRIVATE ${WASSERXR_LIBRARIES})
 
-install(TARGETS demo
+install(TARGETS demo demo_lib
     RUNTIME DESTINATION bin
     LIBRARY DESTINATION lib
     ARCHIVE DESTINATION lib
