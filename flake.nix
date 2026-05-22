@@ -23,6 +23,50 @@
         lib = nixpkgs.lib;
       in
       {
+        packages.default = pkgs.stdenv.mkDerivation {
+          pname = "WasserXR-Demo";
+          version = "pre 0.1.0";
+
+          src = pkgs.lib.cleanSourceWith {
+            src = ./.;
+            filter =
+              path: type:
+              let
+                baseName = builtins.baseNameOf path;
+              in
+              !(baseName == "build");
+          };
+
+          nativeBuildInputs = [
+            # Build packages
+            pkgs.clang-tools
+            pkgs.clang
+            pkgs.cmake
+          ];
+
+          buildInputs = [
+            # Libraries
+            pkgs.glfw
+            pkgs.glib
+            pkgs.cglm
+            pkgs.pkg-config
+            pkgs.pcre2
+            pkgs.libsysprof-capture
+            pkgs.assimp
+            wasserxr.packages.${system}.default
+            wasserxr-core.packages.${system}.default
+          ];
+
+          cmakeFlags = [
+            (lib.cmakeBool "BUILD_DEBUG" true)
+          ];
+
+          meta = {
+            mainProgram = "demo";
+            license = pkgs.lib.licenses.mit;
+          };
+        };
+
         devShells.default = pkgs.mkShell {
           name = "devShell";
 
