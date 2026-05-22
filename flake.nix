@@ -58,7 +58,7 @@
           ];
 
           cmakeFlags = [
-            (lib.cmakeBool "BUILD_DEBUG" true)
+            (lib.cmakeBool "BUILD_DEBUG" false)
           ];
 
           meta = {
