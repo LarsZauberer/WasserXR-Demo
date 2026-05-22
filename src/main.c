@@ -13,6 +13,7 @@ int main() {
   WXR_Scene *scene = wxr_create_scene();
 
   wxr_load_plugin(scene, "libwasserxr_core.so");
+  wxr_load_plugin(scene, "build/libdemo_lib.so");
 
   WXR_Entity console = wxr_add_entity(scene);
   wxr_add_component(scene, console, "WXR_Console");
@@ -35,6 +36,8 @@ int main() {
   wxr_add_system(scene, "wxr_window_reloader", 100);
 
   wxr_add_system(scene, "wxr_mesh_renderer", 100);
+
+  wxr_deserialize_scene_from_file(scene, "scenes/main.wxr");
 
   while (wxr_tick_scene(scene)) {
   }
