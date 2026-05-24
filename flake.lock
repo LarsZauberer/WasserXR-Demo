@@ -210,11 +210,11 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1779631631,
-        "narHash": "sha256-mgtxfjlSnFqWVVcsv79PSoV3w4iAj33G5WAXq6oUqYY=",
+        "lastModified": 1779632856,
+        "narHash": "sha256-Tsv2qF0P1baQAlKgRteMCfHQEoAGOd+jwnhr/EVsAiI=",
         "owner": "LarsZauberer",
         "repo": "WasserXR",
-        "rev": "c7b29d51f436b2ec53abbe40b6b32715d6171999",
+        "rev": "01e8ca7cbb8417ee9b3fde0ff8de88516a9b6c44",
         "type": "github"
       },
       "original": {
@@ -230,11 +230,11 @@
         "wasserxr": "wasserxr_2"
       },
       "locked": {
-        "lastModified": 1779631787,
-        "narHash": "sha256-sy+SZ321AH4M1rjvtF9YE0g5zr4wsqB57j5ghhhRLRI=",
+        "lastModified": 1779632943,
+        "narHash": "sha256-FzSvVgB0E+lNBC5cmFbwxAbpyWgeBfDXTk9J1IajAn0=",
         "owner": "LarsZauberer",
         "repo": "WasserXR-Core",
-        "rev": "da2d7e0f4585efca9f82553e8a3793e30dbd98ec",
+        "rev": "5dc2368649c0554d9349e2bb3c127cc18297be2c",
         "type": "github"
       },
       "original": {
@@ -249,11 +249,11 @@
         "nixpkgs": "nixpkgs_4"
       },
       "locked": {
-        "lastModified": 1779631631,
-        "narHash": "sha256-mgtxfjlSnFqWVVcsv79PSoV3w4iAj33G5WAXq6oUqYY=",
+        "lastModified": 1779632856,
+        "narHash": "sha256-Tsv2qF0P1baQAlKgRteMCfHQEoAGOd+jwnhr/EVsAiI=",
         "owner": "LarsZauberer",
         "repo": "WasserXR",
-        "rev": "c7b29d51f436b2ec53abbe40b6b32715d6171999",
+        "rev": "01e8ca7cbb8417ee9b3fde0ff8de88516a9b6c44",
         "type": "github"
       },
       "original": {
