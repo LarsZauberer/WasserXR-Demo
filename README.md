@@ -36,9 +36,3 @@ cmake -S . -B build
 cmake --build build
 ./build/demo
 ```
-
-or if you are using NixOS
-
-```bash
-nix run
-```
