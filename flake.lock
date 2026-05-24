@@ -210,14 +210,17 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1779370049,
-        "narHash": "sha256-kOeIne82Gvkixs35KsFYQja0WA8BYZpu6AcCUpQS3lA=",
-        "path": "/home/lars/GitHub/WasserXR/WasserXR",
-        "type": "path"
+        "lastModified": 1779632856,
+        "narHash": "sha256-Tsv2qF0P1baQAlKgRteMCfHQEoAGOd+jwnhr/EVsAiI=",
+        "owner": "LarsZauberer",
+        "repo": "WasserXR",
+        "rev": "01e8ca7cbb8417ee9b3fde0ff8de88516a9b6c44",
+        "type": "github"
       },
       "original": {
-        "path": "/home/lars/GitHub/WasserXR/WasserXR",
-        "type": "path"
+        "owner": "LarsZauberer",
+        "repo": "WasserXR",
+        "type": "github"
       }
     },
     "wasserxr-core": {
@@ -227,14 +230,17 @@
         "wasserxr": "wasserxr_2"
       },
       "locked": {
-        "lastModified": 1779370168,
-        "narHash": "sha256-2T/O76IbAMc1BD3m5YdwmntsjsF+L+Nwar7F9c6IQNI=",
-        "path": "/home/lars/GitHub/WasserXR/WasserXR-Core",
-        "type": "path"
+        "lastModified": 1779632943,
+        "narHash": "sha256-FzSvVgB0E+lNBC5cmFbwxAbpyWgeBfDXTk9J1IajAn0=",
+        "owner": "LarsZauberer",
+        "repo": "WasserXR-Core",
+        "rev": "5dc2368649c0554d9349e2bb3c127cc18297be2c",
+        "type": "github"
       },
       "original": {
-        "path": "/home/lars/GitHub/WasserXR/WasserXR-Core",
-        "type": "path"
+        "owner": "LarsZauberer",
+        "repo": "WasserXR-Core",
+        "type": "github"
       }
     },
     "wasserxr_2": {
@@ -243,14 +249,17 @@
         "nixpkgs": "nixpkgs_4"
       },
       "locked": {
-        "lastModified": 1779370049,
-        "narHash": "sha256-kOeIne82Gvkixs35KsFYQja0WA8BYZpu6AcCUpQS3lA=",
-        "path": "/home/lars/GitHub/WasserXR/WasserXR",
-        "type": "path"
+        "lastModified": 1779632856,
+        "narHash": "sha256-Tsv2qF0P1baQAlKgRteMCfHQEoAGOd+jwnhr/EVsAiI=",
+        "owner": "LarsZauberer",
+        "repo": "WasserXR",
+        "rev": "01e8ca7cbb8417ee9b3fde0ff8de88516a9b6c44",
+        "type": "github"
       },
       "original": {
-        "path": "/home/lars/GitHub/WasserXR/WasserXR",
-        "type": "path"
+        "owner": "LarsZauberer",
+        "repo": "WasserXR",
+        "type": "github"
       }
     }
   },
