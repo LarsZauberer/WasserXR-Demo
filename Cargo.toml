@@ -1,0 +1,15 @@
+[package]
+name = "wasserxr-demo"
+version = "0.2.0"
+edition = "2024"
+
+[dependencies]
+wasserxr = {path = "../WasserXR"}
+wasserxr-core = {path = "../WasserXR-Core", optional = true}
+
+[features]
+default = []
+static = ["dep:wasserxr-core"]
+
+[lib]
+crate-type = ["cdylib"]
