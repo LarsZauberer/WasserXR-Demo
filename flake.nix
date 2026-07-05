@@ -38,6 +38,8 @@
 
           buildInputs = [
             nightlyRust
+            pkgs.cargo-release
+
             pkgs.cmake
             pkgs.zlib
           ];
